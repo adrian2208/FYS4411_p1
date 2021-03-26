@@ -13,9 +13,11 @@ if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Debug)
 endif()
 
+
+
 # Add all compiler warnings. Remember, a warning in C++ can very often lead to a bug
 # later on so _fix your warnings!_
-set(CMAKE_CXX_FLAGS "-Wall -Wextra")
+############################################################################################set(CMAKE_CXX_FLAGS "-Wall -Wextra")
 # Add debugging flag for tools such as gdb and valgrind.
 set(CMAKE_CXX_FLAGS_DEBUG "-g")
 # Add full compiler optimization when in the release build type. Other options include
@@ -42,4 +44,4 @@ file(
 
 
 # Create executable called "vmc"
-add_executable(vmc ${SOURCES})
+add_executable(vmc ${SOURCES} "WaveFunctions/simplegaussian_numerical.cpp" "WaveFunctions/simplegaussian_numerical.h" "Benchmark.h" "runtype.h" "sampler_gd.h" "sampler_gd.cpp" "Hamiltonians/ellipticOscillator.h" "Hamiltonians/ellipticOscillator.cpp" "WaveFunctions/correlatedGaussian.h" "WaveFunctions/correlatedGaussian.cpp")

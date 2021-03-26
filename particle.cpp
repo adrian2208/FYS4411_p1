@@ -16,3 +16,12 @@ void Particle::adjustPosition(double change, int dimension) {
 void Particle::setNumberOfDimensions(int numberOfDimensions) {
     m_numberOfDimensions = numberOfDimensions;
 }
+
+double Particle::positionSquared(){
+    double result = 0;
+    
+    for (int i = 0; i < m_numberOfDimensions; i++) {
+        result += m_position[i] * m_position[i];
+    }
+    return result;
+}

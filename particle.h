@@ -8,9 +8,9 @@ public:
     void adjustPosition(double change, int dimension);
     void setNumberOfDimensions(int numberOfDimensions);
     std::vector<double> getPosition() { return m_position; }
-
+    double positionSquared();
 private:
-    int     m_numberOfDimensions = 0;
+    int m_numberOfDimensions = 0;
     std::vector<double> m_position = std::vector<double>();
 };
 
