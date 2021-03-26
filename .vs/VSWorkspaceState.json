@@ -5,9 +5,8 @@
     "\\InitialStates",
     "\\Math",
     "\\out",
-    "\\Results\\Report_Results",
     "\\WaveFunctions"
   ],
-  "SelectedNode": "\\sampler.cpp",
+  "SelectedNode": "\\CMakeLists.txt",
   "PreviewInSolutionExplorer": false
 }

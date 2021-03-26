@@ -21,6 +21,8 @@ protected:
     void    samplePos();
     int     m_numberOfMetropolisSteps       = 0;
     int     m_stepNumber                    = 0;
+    //std::vector<int> m_x_list(100, 0);
+    //std::vector<int> m_p(100, 0);
     double  m_energy                        = 0;
     double  m_cumulativeEnergy              = 0;
     int     m_NrAcceptedSteps               = 0;

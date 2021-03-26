@@ -41,24 +41,24 @@ void Sampler::sample(bool acceptedStep) {
     m_stepNumber++;
 }
 
-void Sampler::samplePos() {
-    std::vector<Particle*> particles = m_system->getParticles();
-    double x;
-    double r;
-    for (Particle* particle : particles) {
-        x = particle->getPosition()[0];
-        r = sqrt(particle->positionSquared());
-        if (x < 4) {
-            if (x > -4) {
-                m_x_list[(int)floor(x * 15) + 100]++;
-            }
-        }
-        if (r < 8) {
-            m_p[(int)floor(r * 15)] ++;
-        }
-    }
+//void Sampler::samplePos() {
+//    std::vector<Particle*> particles = m_system->getParticles();
+//    double x;
+//    double r;
+//    for (Particle* particle : particles) {
+//        x = particle->getPosition()[0];
+//        r = sqrt(particle->positionSquared());
+//        if (x < 4) {
+//            if (x > -4) {
+//                //m_x_list[(int)floor(x * 15) + 100]++;
+//            }
+//        }
+//        if (r < 8) {
+//            //m_p[(int)floor(r * 15)] ++;
+//        }
+//    }
         
-}
+//}
 
 void Sampler::printOutputToTerminal() {
     int     np = m_system->getNumberOfParticles();
