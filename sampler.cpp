@@ -34,6 +34,9 @@ void Sampler::sample(bool acceptedStep) {
      */
     double localEnergy = m_system->getHamiltonian()->
                          computeLocalEnergy(m_system->getParticles());
+    if (m_samplingPos) {
+        samplePos();
+    }
     
     m_cumulativeEnergy  += localEnergy;
     m_NrAcceptedSteps += (int)acceptedStep;
@@ -41,25 +44,46 @@ void Sampler::sample(bool acceptedStep) {
     m_stepNumber++;
 }
 
-//void Sampler::samplePos() {
-//    std::vector<Particle*> particles = m_system->getParticles();
-//    double x;
-//    double r;
-//    for (Particle* particle : particles) {
-//        x = particle->getPosition()[0];
-//        r = sqrt(particle->positionSquared());
-//        if (x < 4) {
-//            if (x > -4) {
-//                //m_x_list[(int)floor(x * 15) + 100]++;
-//            }
-//        }
-//        if (r < 8) {
-//            //m_p[(int)floor(r * 15)] ++;
-//        }
-//    }
-        
-//}
+void Sampler::samplePos() {
+    std::vector<Particle*> particles = m_system->getParticles();
+    double x;
+    double y;
+    int x_index;
+    int y_index;
+    for (Particle* particle : particles) {
+        x = particle->getPosition()[0];
+        y = particle->getPosition()[1];
+        if (abs(x) < m_intPosSamplingRadius) {
+            if (abs(y) < m_intPosSamplingRadius) {
+                x_index = floor((x + m_intPosSamplingRadius) / m_PosSamplingWidth);
+                y_index = floor((y + m_intPosSamplingRadius) / m_PosSamplingWidth);
+                //std::cout << "r:" << m_intPosSamplingRadius << "    W:" << m_PosSamplingWidth << "\n";
+                //std::cout << "x_index:" << x_index << "    y_index:" << y_index << "\n";
+                m_particlePos_matrix[x_index][y_index] ++;
+            }
+        }
 
+    }
+        
+}
+
+void Sampler::SetupPositionSampling(int NrSamplingLengths, int intPosSamplingRadius) {
+    m_samplingPos = true;
+    m_PosSamplingWidth = 2.0 * intPosSamplingRadius / NrSamplingLengths;
+    //std::cout << "Width: " << m_PosSamplingWidth << "input 1 and 2: " << NrSamplingLengths << "   " << intPosSamplingRadius << "\n";
+    m_NrSamplingLengths = NrSamplingLengths;
+    m_intPosSamplingRadius = intPosSamplingRadius;
+    m_particlePos_matrix = new int* [NrSamplingLengths];
+    for (int i = 0; i < NrSamplingLengths; i++) {
+        m_particlePos_matrix[i] = new int[NrSamplingLengths];
+    }
+    for (int i = 0; i < NrSamplingLengths; i++) {
+        for (int j = 0; j < NrSamplingLengths; j++) {
+            m_particlePos_matrix[i][j] = 0;
+        }
+    }
+
+}
 void Sampler::printOutputToTerminal() {
     int     np = m_system->getNumberOfParticles();
     int     nd = m_system->getNumberOfDimensions();

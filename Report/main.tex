@@ -5,6 +5,7 @@
 \usepackage{braket}
 \usepackage{csvsimple}
 \usepackage{amssymb}
+\usepackage{subcaption}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -47,10 +48,10 @@
 \listoftables
 \clearpage
 \section{Abstract}
-In this paper, we are studying systems of interacting bosons in elliptical harmonic oscillator potentials using variational Monte- Carlo methods approximate the ground state energy. In the non- interacting case, the model gives the exact ground state energy as the analytic solution, with importance sampling reducing the number of Monte- Carlo steps needed to reach equilibration. For the interacting case we show that the particle number- normalized energy diverges for systems with different number of particles.
+In this paper, we are studying systems of interacting bosons in elliptical harmonic oscillator potentials using variational Monte- Carlo methods approximate the ground state energy. In the non- interacting case, the model gives the exact ground state energy as the analytic solution, with importance sampling reducing the number of Monte- Carlo steps needed to reach equilibration. For the interacting case we show that the particle number- normalized energy diverges for systems with different number of particles as expected from the interaction potential. We also look at how the Jastrow factor effects the distribution of bosons in the trap. 
 
 \section{Introduction}
-When studying Bose- Einstein condensates in gases of alkali atoms confined in magnetic traps, many studies have used the Gross- Pitaevskii equation. These models are valid depending among other factors, on the mean atomic distance far exceeding the range for inter- atomic interactions. Barring this, we may see a tuning of the scattering length due to the so- called Feshbach resonance. To remedy this, we can use Variational Monte- Carlo methods to evaluate the ground state energy of a trapped, hard sphere Bose gas, using an ansatz for the wave function with a hard- shell interaction.\\We will first treat the non- interacting, spherical case as a proof of concept, as these have analytic solutions. Then we will look at replacing the analytical expression for the double derivative with numerical differentiation. We can then move on to the interacting case with an elliptical harmonic oscillator potential.\\\\First we'll treat some of the theory behind the Metropolis algorithm and importance sampling, then how we're modelling the Hamiltonian and the choice of trial wave function, calculating the useful properties on the way. 
+When studying Bose- Einstein condensates in gases of alkali atoms confined in magnetic traps, many studies have used the Gross- Pitaevskii equation. These models are valid depending among other factors, on the mean atomic distance far exceeding the range for inter- atomic interactions. Barring this, we may see a tuning of the scattering length due to the so- called Feshbach resonance. To remedy this, we can use Variational Monte- Carlo methods to evaluate the ground state energy of a trapped, hard sphere Bose gas, using an ansatz for the wave function with a hard- shell interaction.\\First we'll treat some of the theory behind the Metropolis algorithm and importance sampling, then how we're modelling the Hamiltonian and the choice of trial wave function, calculating the useful properties on the way.\\We will then treat the non- interacting, spherical case as a proof of concept, as these have analytic solutions. Then we will look at replacing the analytical expression for the double derivative with numerical differentiation. We can then move on to the interacting case with an elliptical harmonic oscillator potential. The results will follow this same procedure. Then we will  look at how the normalized energy levels diverge when we introduce the repulsive interaction and present the results for how the Jastrow factor impacts the distribution of bosons.\\Finally we will discuss the success of the implementation based on the accuracy to the analytic case, and whether the results for the interacting case matched expectations. We will also discuss some of the many ways this program should have been improved.
 
 \section{Theory}
 \subsection{The Variational method}
@@ -403,6 +404,42 @@ While the computation time in the non- interacting case has a nearly linear rela
 \caption[Time expended per datapoint (interacting) ]{Time expenditure per datapoint in seconds v. the number of particles for a correlated system with an elliptical HO- potential using $2^{18}$ MC- steps.}\label{InteractTimeExpend}
 \end{figure}
 the relationship turns out to be a 2'nd degree polynomial. 
+\subsection{The Jastrow factor and The Distribution of Bosons}
+By changing the so- called Hard- Core Diameter of the bosons, we can influence the Jastrow factor and study its effects. We see the results of this in figure \ref{fig:Jastrows} below.
+
+\begin{figure}[H]
+
+\centering
+
+\begin{subfigure}{.5\textwidth}
+  \centering
+\includegraphics[trim=3cm 0.0cm 1.5cm 0.0cm, clip=true,scale = 0.45]{NoJastrow_20.png}
+\caption{Hard- Core diameter $= 0$}\label{J1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+\includegraphics[trim=3cm 0.0cm 1.5cm 0.0cm, clip=true,scale = 0.45]{Jastrow_20.png}
+\caption{Hard- Core diameter $= 0.00433$}\label{J2}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+\includegraphics[trim=3cm 0.0cm 1.5cm 0.0cm, clip=true,scale = 0.45]{LargeJastrow_20.png}
+\caption{Hard- Core diameter $= 0.433$}\label{J3}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+\includegraphics[trim=3cm 0.0cm 1.5cm 0.0cm, clip=true,scale = 0.45]{LargeJastrow_minus_Jastrow_20.png}
+\caption{Figure \ref{J3} minus Figure \ref{J2}}\label{J4}
+\end{subfigure}
+
+\caption[Effect of the Jastrow factor on the XY- distribution of bosons]{The distribution of bosons projected onto the xy- plane using 20 particles in three dimensions, $\alpha = 0.5$ and $2^{20}$ Monte- Carlo steps. The Hard- Core Diameter is $0.00433$ as per \cite{DuBois_2001} and \cite{Nilsen_2005}. Each grid- line corresponds to $1.2$ units of distance.}.
+\label{fig:Jastrows}
+\end{figure}
+
+As we can see, between figures \ref{J1} and \ref{J2} the difference is nearly imperceptible, with only a slight dimming of the central spot. The difference becomes much more noticeable between figures \ref{J2} and \ref{J3} with their difference shown in figure \ref{J4}. The bosons become much more spread out, as clustering together takes more energy when the Jastrow factor is higher.
+
+
+
 
 \section{Conclusion}
 Based on the success of the program in the non- interacting case we can conclude that both the Metropolis Algorithm and The Metropolis- Hastings algorithm were correctly implemented. The implementation of numerical differentiation had unstable results when varying the step length and there wasn't enough time to find an optimal step length for the different systems. This implementation was largely a failure, as it yielded results that were wrong by an order of magnitude. The difference in time- expenditure was substantial, proving that analytical solutions should be applied where possible.\\\\We saw that importance sampling greatly contributed in reducing the error in the energy calculation, as the system equilibrated earlier.\\The implementation of the full correlated system in the elliptical harmonic oscillator showed that there is an additional gain in energy with more particles beyond the the simple multiplicative factor coming from multiplying the one- body problem. The optimal value for $\alpha$ seemed to shift to lower values in the systems with the most particles.\\\\There are several things that should be implemented and improved upon. The number of equilibration steps should not be decided by some arbitrary number. We could instead sample a running mean and start sampling only when the variance falls below a desired value, then sample for some number of steps that are a multiple of two, so as to work with Blocking. The Energies obtained through gradient descent, need error estimates but again, there wasn't time. \\ With a way to classify the end of equilibration, we could study the time to reach equilibration v. the length of the time step in order to obtain an optimal value for the time step, as it's a trade- off between the acceptance rate and the time taken to reach equilibration.\\\\More of the code should have been optimized for parallelization, as currently there are a lot of dependencies between classes that prohibit the compiler from vectorizing and parallelizing the code.

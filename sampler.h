@@ -9,20 +9,27 @@ public:
     virtual void computeAverages();
     void printOutputToTerminal();
     void printOutputToFile();
+    void SetupPositionSampling(int NrSamplingLengths, int intPosSamplingRadius);
     
     double getEnergy()          { return m_energy; }
     double getProductOfExpectations() { return m_productOfExpectations; }
     double getExpectationOfProduct() { return m_expectationOfProduct; }
     double getNumberAccepted() { return m_NrAcceptedSteps; }
+    int**  getParticlePos_matrix() { return m_particlePos_matrix; }
     std::vector<double> getEnergyVector() { return m_energyVector; }
 
 protected:
-
+    // Position Sampling
     void    samplePos();
+    int**   m_particlePos_matrix            = nullptr;
+    int     m_intPosSamplingRadius          = 0;
+    int     m_NrSamplingLengths             = 0;
+    double  m_PosSamplingWidth              = 0;
+    bool    m_samplingPos                   = false;
+
+    // sampling
     int     m_numberOfMetropolisSteps       = 0;
     int     m_stepNumber                    = 0;
-    //std::vector<int> m_x_list(100, 0);
-    //std::vector<int> m_p(100, 0);
     double  m_energy                        = 0;
     double  m_cumulativeEnergy              = 0;
     int     m_NrAcceptedSteps               = 0;

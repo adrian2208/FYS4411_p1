@@ -25,7 +25,7 @@ using namespace std;
 
 int main(int argc, char const *argv[]) {
 
-    BruteForce_MC(argc, argv);
+    //BruteForce_MC(argc, argv);
     //BruteForce_MC_Numerical(argc, argv);
     //BruteForce_MC_Correlated(argc, argv);
     //VMC_w_ImportanceSampling(argc, argv);
@@ -33,6 +33,7 @@ int main(int argc, char const *argv[]) {
     //VMC_w_ImportanceSampling_Correlated(argc, argv);
     //CorrelatedGaussianGD(argc, argv);
     //ParallelCorrelated(argc, argv);
+    Plot2D_Positions(argc, argv);
     return 0;
 }
 
@@ -45,13 +46,14 @@ void BruteForce_MC(int argc, char const* argv[]) {
     int seed = 2020;
     
     int numberOfDimensions = 3;
-    int numberOfParticles = 10;
-    int numberOfSteps = pow(2,14);
+    int numberOfParticles = 3;
+    int numberOfSteps = pow(2,15);
     double omega = 1.0;           // Oscillator frequency.
     double alpha = 0.5;           // Variational parameter.
     double stepLength = 0.1;       // Metropolis step length.
     double equilibration = 0.8;    // Amount of the total steps used
     double driftCoeff = 0.5;       // coeff. D used in MALA
+    double timeStep = 0.01;
     std::string FileOptString= ""; // If empty, no file is printed
     
 
@@ -61,13 +63,14 @@ void BruteForce_MC(int argc, char const* argv[]) {
             numberOfParticles = atoi(argv[2]);
             numberOfSteps = atoi(argv[3]);
             alpha = atof(argv[4]);        // Variational parameter.
-            FileOptString = argv[5];     //Provides an additional identifier at the end of the output file name
+            timeStep = atof(argv[5]);     //Provides an additional identifier at the end of the output file name
+            FileOptString = argv[6];
         }
         catch (int c) {
             std::cout << "Error: " << c << ". Enough input arguments?";
         }
     }
-
+    
 
     System* system = new System(seed);
     system->setHamiltonian(new HarmonicOscillator(system, omega));
@@ -78,16 +81,25 @@ void BruteForce_MC(int argc, char const* argv[]) {
     system->setStepLength(stepLength);
     system->setDriftCoefficient(stepLength);
     system->setFileOptString(FileOptString);
+    
+    int NrSamplingLengths = 50;
+    system->getSampler()->SetupPositionSampling(NrSamplingLengths, 3);
+   
     double elapsed;
     {
         Timer timer("Brute-Force MC",system);
         system->runMetropolisSteps(numberOfSteps);
     }
+    int** matrix = system->getSampler()->getParticlePos_matrix();
+    
+    printMatrixToFile(system->getWaveFunction()->getName(), system->getHamiltonian()->getName(), FileOptString, matrix, NrSamplingLengths);
+
     elapsed = system->getElapsedTime();
     printEnergyToFile(system->getWaveFunction()->getName(), system->getHamiltonian()->getName(), FileOptString, system->getSampler()->getEnergyVector());
     printTimeToFile(system->getWaveFunction()->getName(), system->getHamiltonian()->getName(), FileOptString, elapsed);
     printAcceptedToFile(system->getWaveFunction()->getName(), system->getHamiltonian()->getName(), FileOptString, system->getSampler()->getNumberAccepted() / numberOfSteps);
 }
+
 void BruteForce_MC_Numerical(int argc, char const* argv[]) {
     std::cout << "Running Numerical Brute-Force Monte Carlo....\n";
 
@@ -474,6 +486,54 @@ void ParallelCorrelated(int argc, char const* argv[]) {
 
 }
 
+void Plot2D_Positions(int argc, char const* argv[]) {
+    std::cout << "Running....\n";
+
+    // Seed for the random number generator
+    int seed = 2020;
+
+    int numberOfDimensions = 3;
+
+    double gamma = 2.82843;
+    //double hardCoreDiameter = 0.00433;
+    double beta = 2.82843;
+    double stepLength = 0.1;       // Metropolis step length.
+    double equilibration = 0.8;    // Amount of the total steps used
+    double driftCoeff = 0.5;       // coeff. D used in MALA
+    double timeStep = 0.01;
+    std::string FileOptString = ""; // If empty, no file is printed
+
+    std::cout << argv[1] << "\n";
+    int numberOfParticles = atoi(argv[1]);
+    int numberOfSteps = atoi(argv[2]);
+    double alpha = atof(argv[3]);        // Variational parameter.
+    double hardCoreDiameter = atof(argv[4]);
+    int NrSamplingLengths = atoi(argv[5]);
+    int SamplingRadius = atoi(argv[6]);
+    FileOptString = argv[7];
+
+
+
+    System* system = new System(seed);
+    system->setHamiltonian(new EllipticOscillator(system, gamma, hardCoreDiameter, numberOfDimensions));
+    system->setWaveFunction(new CorrelatedGaussian(system, alpha, beta, hardCoreDiameter));
+    system->setInitialState(new RandomUniform(system, numberOfDimensions, numberOfParticles));
+    system->setSampler(new Sampler(system));
+    system->setEquilibrationFraction(equilibration);
+    system->setStepLength(stepLength);
+    system->setDriftCoefficient(stepLength);
+    system->setFileOptString(FileOptString);
+
+    system->getSampler()->SetupPositionSampling(NrSamplingLengths, SamplingRadius);
+
+    system->runMetropolisSteps(numberOfSteps);
+
+    
+    int** matrix = system->getSampler()->getParticlePos_matrix();
+    printMatrixToFile(system->getWaveFunction()->getName(), system->getHamiltonian()->getName(), FileOptString, matrix, NrSamplingLengths);
+
+}
+
 ///////////////////////////////////////////
 
 
@@ -523,6 +583,32 @@ void printTimeToFile(std::string WF, std::string H, std::string fileOptString, d
     std::ofstream OutFile;
     OutFile.open(path, std::fstream::app);
     OutFile << elapsed << "\n";
+
+    OutFile.close();
+}
+
+
+
+void printMatrixToFile(std::string WF, std::string H, std::string fileOptString, int** matrix, int NrSamplingLengths) {
+    //std::string WF = system->getWaveFunction()->getName();
+    //std::string H = system->getHamiltonian()->getName();
+
+
+    //IMPORTANT: when this program is executed through python, the root directory is assumed to be 
+    //the directory of the python program, not the executable, meaning the path below 
+    // will output to variational-monte-carlo-fys4411/Output when called from python 
+    // but to a subdirectory in the x64-Release directory when run from the executable
+
+    std::string path = ".\\Output\\" + WF + "_" + H + "_" + fileOptString + "_Matrix" + ".csv";
+    std::ofstream OutFile;
+    OutFile.open(path, std::fstream::app);
+    for (int i = 0; i < NrSamplingLengths; i++) {
+        OutFile << matrix[i][0];
+        for (int j = 1; j < NrSamplingLengths; j++) {
+            OutFile << "," << matrix[i][j] ;
+        }
+        OutFile << "\n";
+    }
 
     OutFile.close();
 }

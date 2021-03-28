@@ -86,6 +86,8 @@ def RunVMC_w_blocking_varyTimestep_constantAlpha(NrDimensions, NrParticles, NrSt
 			energies_file = file
 		elif name.split("_")[-1] == "ElapsedTime":
 			elapsedTime_file = file
+		elif name.split("_")[-1] == "Matrix":
+			matrix_file = file
 		else:
 			Main_csv_file = file
 	print(Main_csv_file)
@@ -153,6 +155,8 @@ def runBlocking():
 			time_file = file
 		elif name.split("_")[-1] == "accepted":
 			accepted_fil = file
+		elif name.split("_")[-1] == "Matrix":
+			matrix_file = file
 		else:
 			Main_csv_file = file
 	#Then make sure those file's filenames are sorted by their identifying number
@@ -176,6 +180,10 @@ def getXYData(FilePath,x_col_indx, y_col_indx):
 	y =  file[y_col_indx][:].to_numpy()
 	x =  file[x_col_indx][:].to_numpy()
 	return x, y
+
+def getMatrixFromFile(FilePath):
+	file = pd.read_csv(FilePath, header = None)
+	return file.values
 
 def getTimeData(FilePath):
 	file = pd.read_csv(FilePath, header = None)
@@ -229,6 +237,20 @@ def createFig(x,y,error, title, x_label, y_label, legend, errorbars = False, sav
 		plt.title(title)
 		figPath = ".\\Results\\{}_.pdf".format(title)
 		plt.savefig(figPath)
+
+def createMatrixPlot(matrix):
+	""" 
+	enter x, y and error each as an array of arrays containing the plotting data for each
+    plot line 
+    """
+	plt.style.use("ggplot")
+
+	plt.imshow(matrix, interpolation = "none")
+	plt.colorbar()
+	plt.show()
+	#figPath = ".\\Results\\{}.pdf".format(title)
+	#plt.savefig(figPath)
+
 
 ###################ignore us, we're old and stupid ###################################
 """

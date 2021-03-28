@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.26)  26 MAR 2021 21:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.26)  28 MAR 2021 03:48
 entering extended mode
 **./main.tex
 (main.tex
@@ -149,7 +149,34 @@ Package shellesc Info: Restricted shell escape enabled on input line 77.
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+
+(C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+
+(C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks26
+)
+\captionmargin=\dimen146
+\captionmargin@=\dimen147
+\captionwidth=\dimen148
+\caption@tempdima=\dimen149
+\caption@indent=\dimen150
+\caption@parindent=\dimen151
+\caption@hangindent=\dimen152
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count192
+\c@continuedfloat=\count193
+)
+\c@subfigure=\count194
+\c@subtable=\count195
+) (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
 
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
@@ -170,10 +197,6 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)
-(C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks26
 )
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.s
 ty
@@ -199,9 +222,9 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
-\@linkdim=\dimen146
-\Hy@linkcounter=\count192
-\Hy@pagecounter=\count193
+\@linkdim=\dimen153
+\Hy@linkcounter=\count196
+\Hy@pagecounter=\count197
  (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -213,7 +236,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count194
+\Hy@SavedSpaceFactor=\count198
 Package hyperref Info: Hyper figures OFF on input line 4464.
 Package hyperref Info: Link nesting OFF on input line 4469.
 Package hyperref Info: Hyper index ON on input line 4472.
@@ -221,13 +244,13 @@ Package hyperref Info: Plain pages OFF on input line 4479.
 Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count195
+\c@Hy@tempcnt=\count199
  (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5076.
-\XeTeXLinkMargin=\dimen147
+\XeTeXLinkMargin=\dimen154
 
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -237,9 +260,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count196
-\Field@Width=\dimen148
-\Fld@charsize=\dimen149
+\Fld@menulength=\count266
+\Field@Width=\dimen155
+\Fld@charsize=\dimen156
 Package hyperref Info: Hyper figures OFF on input line 6347.
 Package hyperref Info: Link nesting OFF on input line 6352.
 Package hyperref Info: Hyper index ON on input line 6355.
@@ -253,9 +276,9 @@ LaTeX Info: Redefining \pageref on input line 6421.
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/atbegshi\atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count197
-\c@Item=\count198
-\c@Hfootnote=\count199
+\Hy@abspage=\count267
+\c@Item=\count268
+\c@Hfootnote=\count269
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
@@ -264,8 +287,8 @@ File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/atveryend\atveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
-\Fld@listcount=\count266
-\c@bookmark@seq@number=\count267
+\Fld@listcount=\count270
+\c@bookmark@seq@number=\count271
 
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -280,7 +303,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip52
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 15.
+Package hyperref Info: Option `colorlinks' set `true' on input line 16.
 
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
 sty
@@ -307,8 +330,8 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2020/08/26 v1.2 Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen150
-\Gin@req@width=\dimen151
+\Gin@req@height=\dimen157
+\Gin@req@width=\dimen158
 )
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
 sty
@@ -318,26 +341,26 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 .code.tex)
-\pgf@x=\dimen152
-\pgf@y=\dimen153
-\pgf@xa=\dimen154
-\pgf@ya=\dimen155
-\pgf@xb=\dimen156
-\pgf@yb=\dimen157
-\pgf@xc=\dimen158
-\pgf@yc=\dimen159
-\pgf@xd=\dimen160
-\pgf@yd=\dimen161
+\pgf@x=\dimen159
+\pgf@y=\dimen160
+\pgf@xa=\dimen161
+\pgf@ya=\dimen162
+\pgf@xb=\dimen163
+\pgf@yb=\dimen164
+\pgf@xc=\dimen165
+\pgf@yc=\dimen166
+\pgf@xd=\dimen167
+\pgf@yd=\dimen168
 \w@pgf@writea=\write4
 \r@pgf@reada=\read3
-\c@pgf@counta=\count268
-\c@pgf@countb=\count269
-\c@pgf@countc=\count270
-\c@pgf@countd=\count271
+\c@pgf@counta=\count272
+\c@pgf@countb=\count273
+\c@pgf@countc=\count274
+\c@pgf@countd=\count275
 \t@pgf@toka=\toks27
 \t@pgf@tokb=\toks28
 \t@pgf@tokc=\toks29
-\pgf@sys@id@count=\count272
+\pgf@sys@id@count=\count276
 
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
 fg
@@ -356,8 +379,8 @@ File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 ssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count273
-\pgfsyssoftpath@bigbuffer@items=\count274
+\pgfsyssoftpath@smallbuffer@items=\count277
+\pgfsyssoftpath@bigbuffer@items=\count278
 )
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 sprotocol.code.tex
@@ -392,8 +415,8 @@ code.tex
 code.tex)
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
 r.code.tex
-\pgfmath@dimen=\dimen162
-\pgfmath@count=\count275
+\pgfmath@dimen=\dimen169
+\pgfmath@count=\count279
 \pgfmath@box=\box48
 \pgfmath@toks=\toks30
 \pgfmath@stack@operand=\toks31
@@ -419,39 +442,39 @@ ions.misc.code.tex)
 ions.integerarithmetics.code.tex)))
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
 .code.tex
-\c@pgfmathroundto@lastzeros=\count276
+\c@pgfmathroundto@lastzeros=\count280
 ))
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
 tex)
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epoints.code.tex
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@picminx=\dimen163
-\pgf@picmaxx=\dimen164
-\pgf@picminy=\dimen165
-\pgf@picmaxy=\dimen166
-\pgf@pathminx=\dimen167
-\pgf@pathmaxx=\dimen168
-\pgf@pathminy=\dimen169
-\pgf@pathmaxy=\dimen170
-\pgf@xx=\dimen171
-\pgf@xy=\dimen172
-\pgf@yx=\dimen173
-\pgf@yy=\dimen174
-\pgf@zx=\dimen175
-\pgf@zy=\dimen176
+\pgf@picminx=\dimen170
+\pgf@picmaxx=\dimen171
+\pgf@picminy=\dimen172
+\pgf@picmaxy=\dimen173
+\pgf@pathminx=\dimen174
+\pgf@pathmaxx=\dimen175
+\pgf@pathminy=\dimen176
+\pgf@pathmaxy=\dimen177
+\pgf@xx=\dimen178
+\pgf@xy=\dimen179
+\pgf@yx=\dimen180
+\pgf@yy=\dimen181
+\pgf@zx=\dimen182
+\pgf@zy=\dimen183
 )
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@path@lastx=\dimen177
-\pgf@path@lasty=\dimen178
+\pgf@path@lastx=\dimen184
+\pgf@path@lasty=\dimen185
 )
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathusage.code.tex
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@shorten@end@additional=\dimen179
-\pgf@shorten@start@additional=\dimen180
+\pgf@shorten@end@additional=\dimen186
+\pgf@shorten@start@additional=\dimen187
 )
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 escopes.code.tex
@@ -459,19 +482,19 @@ File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfpic=\box49
 \pgf@hbox=\box50
 \pgf@layerbox@main=\box51
-\pgf@picture@serial@count=\count277
+\pgf@picture@serial@count=\count281
 )
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 egraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgflinewidth=\dimen181
+\pgflinewidth=\dimen188
 )
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 etransformations.code.tex
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@pt@x=\dimen182
-\pgf@pt@y=\dimen183
-\pgf@pt@temp=\dimen184
+\pgf@pt@x=\dimen189
+\pgf@pt@y=\dimen190
+\pgf@pt@temp=\dimen191
 )
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 equick.code.tex
@@ -488,14 +511,14 @@ File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 earrows.code.tex
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowsep=\dimen185
+\pgfarrowsep=\dimen192
 )
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eshade.code.tex
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@max=\dimen186
-\pgf@sys@shading@range@num=\count278
-\pgf@shadingcount=\count279
+\pgf@max=\dimen193
+\pgf@sys@shading@range@num=\count282
+\pgf@shadingcount=\count283
 )
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eimage.code.tex
@@ -534,8 +557,8 @@ File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-0-65.sty
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@nodesepstart=\dimen187
-\pgf@nodesepend=\dimen188
+\pgf@nodesepstart=\dimen194
+\pgf@nodesepend=\dimen195
 )
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-1-18.sty
@@ -551,8 +574,8 @@ Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
 .tex)
-\pgffor@iter=\dimen189
-\pgffor@skip=\dimen190
+\pgffor@iter=\dimen196
+\pgffor@skip=\dimen197
 \pgffor@stack=\toks33
 \pgffor@toks=\toks34
 ))
@@ -563,34 +586,34 @@ Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count280
-\pgfplotmarksize=\dimen191
+\pgf@plot@mark@count=\count284
+\pgfplotmarksize=\dimen198
 )
-\tikz@lastx=\dimen192
-\tikz@lasty=\dimen193
-\tikz@lastxsaved=\dimen194
-\tikz@lastysaved=\dimen195
-\tikz@lastmovetox=\dimen196
-\tikz@lastmovetoy=\dimen197
-\tikzleveldistance=\dimen198
-\tikzsiblingdistance=\dimen199
+\tikz@lastx=\dimen199
+\tikz@lasty=\dimen256
+\tikz@lastxsaved=\dimen257
+\tikz@lastysaved=\dimen258
+\tikz@lastmovetox=\dimen259
+\tikz@lastmovetoy=\dimen260
+\tikzleveldistance=\dimen261
+\tikzsiblingdistance=\dimen262
 \tikz@figbox=\box54
 \tikz@figbox@bg=\box55
 \tikz@tempbox=\box56
 \tikz@tempbox@bg=\box57
-\tikztreelevel=\count281
-\tikznumberofchildren=\count282
-\tikznumberofcurrentchild=\count283
-\tikz@fig@count=\count284
+\tikztreelevel=\count285
+\tikznumberofchildren=\count286
+\tikznumberofcurrentchild=\count287
+\tikz@fig@count=\count288
 
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 matrix.code.tex
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count285
-\pgfmatrixcurrentcolumn=\count286
-\pgf@matrix@numberofcolumns=\count287
+\pgfmatrixcurrentrow=\count289
+\pgfmatrixcurrentcolumn=\count290
+\pgf@matrix@numberofcolumns=\count291
 )
-\tikz@expandcount=\count288
+\tikz@expandcount=\count292
 
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarytopaths.code.tex
@@ -631,11 +654,11 @@ File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryarrows.code.tex
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\arrowsize=\dimen256
+\arrowsize=\dimen263
 ))
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count289
+\c@float@type=\count293
 \float@exts=\toks35
 \float@box=\box58
 \@float@everytoks=\toks36
@@ -655,17 +678,17 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count290
-\Gm@cntv=\count291
-\c@Gm@tempcnt=\count292
-\Gm@bindingoffset=\dimen257
-\Gm@wd@mp=\dimen258
-\Gm@odd@mp=\dimen259
-\Gm@even@mp=\dimen260
-\Gm@layoutwidth=\dimen261
-\Gm@layoutheight=\dimen262
-\Gm@layouthoffset=\dimen263
-\Gm@layoutvoffset=\dimen264
+\Gm@cnth=\count294
+\Gm@cntv=\count295
+\c@Gm@tempcnt=\count296
+\Gm@bindingoffset=\dimen264
+\Gm@wd@mp=\dimen265
+\Gm@odd@mp=\dimen266
+\Gm@even@mp=\dimen267
+\Gm@layoutwidth=\dimen268
+\Gm@layoutheight=\dimen269
+\Gm@layouthoffset=\dimen270
+\Gm@layoutvoffset=\dimen271
 \Gm@dimlist=\toks37
 
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
@@ -674,35 +697,39 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip53
 \bibsep=\skip54
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count293
+\c@NAT@ctr=\count297
 )
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2020-09-01 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count294
+\l__kernel_color_stack_int=\count298
 \l__pdf_internal_box=\box60
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
  ABD: EveryShipout initializing macros
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box61
-Package hyperref Info: Link coloring ON on input line 42.
+Package hyperref Info: Link coloring ON on input line 43.
 
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -714,11 +741,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count295
+\c@section@level=\count299
 )
-LaTeX Info: Redefining \ref on input line 42.
-LaTeX Info: Redefining \pageref on input line 42.
-LaTeX Info: Redefining \nameref on input line 42.
+LaTeX Info: Redefining \ref on input line 43.
+LaTeX Info: Redefining \pageref on input line 43.
+LaTeX Info: Redefining \nameref on input line 43.
  (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -727,16 +754,16 @@ LaTeX Info: Redefining \nameref on input line 42.
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count296
-\scratchdimen=\dimen265
+\scratchcounter=\count300
+\scratchdimen=\dimen272
 \scratchbox=\box62
-\nofMPsegments=\count297
-\nofMParguments=\count298
+\nofMPsegments=\count301
+\nofMParguments=\count302
 \everyMPshowfont=\toks38
-\MPscratchCnt=\count299
-\MPscratchDim=\dimen266
-\MPnumerator=\count300
-\makeMPintoPDFobject=\count301
+\MPscratchCnt=\count303
+\MPscratchDim=\dimen273
+\MPnumerator=\count304
+\makeMPintoPDFobject=\count305
 \everyMPtoPDFconversion=\toks39
 )
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -779,12 +806,12 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 45.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
 
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
 
 
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -797,7 +824,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout6 = `main.toc'.
 
 
-(main.lof)
+(main.lofpdfTeX warning (ext4): destination with the same identifier (name{page
+.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.14 ...ibution of bosons}}{16}{figure.caption.18}
+                                                  % [1])
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
@@ -805,283 +837,219 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.48 \clearpage
-                [1] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
-
- []
-
+ [2]
 [3
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
+Underfull \hbox (badness 10000) in paragraph at lines 102--104
 
  []
 
-[4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 220--224
+[4] [5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 221--225
 
  []
 
-[6] [7]
+[7]
 <../Results/Report_Results/D_1_HarmonicOscillator SimpleGaussian Analytical_2po
-w18.pdf, id=276, 462.52798pt x 346.89601pt>
+w18.pdf, id=283, 462.52798pt x 346.89601pt>
 File: ../Results/Report_Results/D_1_HarmonicOscillator SimpleGaussian Analytica
 l_2pow18.pdf Graphic file (type pdf)
 <use ../Results/Report_Results/D_1_HarmonicOscillator SimpleGaussian Analytical
 _2pow18.pdf>
 Package pdftex.def Info: ../Results/Report_Results/D_1_HarmonicOscillator Simpl
-eGaussian Analytical_2pow18.pdf  used on input line 282.
+eGaussian Analytical_2pow18.pdf  used on input line 283.
 (pdftex.def)             Requested size: 323.76736pt x 222.90877pt.
+ [8]
 <../Results/Report_Results/D_1_HarmonicOscillator_SimpleGaussian_Analytical_2po
-w22.pdf, id=279, 462.52798pt x 346.89601pt>
+w22.pdf, id=292, 462.52798pt x 346.89601pt>
 File: ../Results/Report_Results/D_1_HarmonicOscillator_SimpleGaussian_Analytica
 l_2pow22.pdf Graphic file (type pdf)
 <use ../Results/Report_Results/D_1_HarmonicOscillator_SimpleGaussian_Analytical
 _2pow22.pdf>
 Package pdftex.def Info: ../Results/Report_Results/D_1_HarmonicOscillator_Simpl
-eGaussian_Analytical_2pow22.pdf  used on input line 289.
+eGaussian_Analytical_2pow22.pdf  used on input line 290.
 (pdftex.def)             Requested size: 323.76736pt x 222.90877pt.
- [8pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
- has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.291 \end{figure}
-                   <../Results/Report_Results/D_1_HarmonicOscillator SimpleGaus
-sian Analytical_2pow18.pdf>]
 <../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D2_2pow22_analytic
-.pdf, id=325, 462.52798pt x 346.89601pt>
+.pdf, id=297, 462.52798pt x 346.89601pt>
 File: ../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D2_2pow22_ana
 lytic.pdf Graphic file (type pdf)
 <use ../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D2_2pow22_anal
 ytic.pdf>
 Package pdftex.def Info: ../Results/Report_Results/HarmonicOscillator_SimpleGau
-ssian_D2_2pow22_analytic.pdf  used on input line 298.
+ssian_D2_2pow22_analytic.pdf  used on input line 299.
 (pdftex.def)             Requested size: 323.76736pt x 222.90877pt.
+ [9 <../Results/Report_Results/D_1_HarmonicOscillator SimpleGaussian Analytical
+_2pow18.pdf> <../Results/Report_Results/D_1_HarmonicOscillator_SimpleGaussian_A
+nalytical_2pow22.pdf>]
 <../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D3_2pow22_analytic
-_NoTitle.pdf, id=327, 462.52798pt x 346.89601pt>
+_NoTitle.pdf, id=373, 462.52798pt x 346.89601pt>
 File: ../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D3_2pow22_ana
 lytic_NoTitle.pdf Graphic file (type pdf)
 <use ../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D3_2pow22_anal
 ytic_NoTitle.pdf>
 Package pdftex.def Info: ../Results/Report_Results/HarmonicOscillator_SimpleGau
-ssian_D3_2pow22_analytic_NoTitle.pdf  used on input line 305.
+ssian_D3_2pow22_analytic_NoTitle.pdf  used on input line 306.
 (pdftex.def)             Requested size: 323.76736pt x 222.90877pt.
- [9pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
- has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.308 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-3}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.308 
-       <../Results/Report_Results/D_1_HarmonicOscillator_SimpleGaussian_Analyti
-cal_2pow22.pdf> <../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D2
-_2pow22_analytic.pdf>]
 <../Results/Report_Results/HarmonicOscillator_SimpleGaussianNumerical_D1_2pow22
-_numerical_NoTitle.pdf, id=404, 462.52798pt x 346.89601pt>
+_numerical_NoTitle.pdf, id=376, 462.52798pt x 346.89601pt>
 File: ../Results/Report_Results/HarmonicOscillator_SimpleGaussianNumerical_D1_2
 pow22_numerical_NoTitle.pdf Graphic file (type pdf)
 <use ../Results/Report_Results/HarmonicOscillator_SimpleGaussianNumerical_D1_2p
 ow22_numerical_NoTitle.pdf>
 Package pdftex.def Info: ../Results/Report_Results/HarmonicOscillator_SimpleGau
-ssianNumerical_D1_2pow22_numerical_NoTitle.pdf  used on input line 315.
+ssianNumerical_D1_2pow22_numerical_NoTitle.pdf  used on input line 316.
 (pdftex.def)             Requested size: 323.76736pt x 222.90877pt.
+ [10 <../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D2_2pow22_ana
+lytic.pdf> <../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D3_2pow
+22_analytic_NoTitle.pdf>]
 <../Results/Report_Results/HarmonicOscillator_SimpleGaussianNumerical_D2_2pow22
-_numerical_NoTitle.pdf, id=407, 462.52798pt x 346.89601pt>
+_numerical_NoTitle.pdf, id=453, 462.52798pt x 346.89601pt>
 File: ../Results/Report_Results/HarmonicOscillator_SimpleGaussianNumerical_D2_2
 pow22_numerical_NoTitle.pdf Graphic file (type pdf)
 <use ../Results/Report_Results/HarmonicOscillator_SimpleGaussianNumerical_D2_2p
 ow22_numerical_NoTitle.pdf>
 Package pdftex.def Info: ../Results/Report_Results/HarmonicOscillator_SimpleGau
-ssianNumerical_D2_2pow22_numerical_NoTitle.pdf  used on input line 323.
+ssianNumerical_D2_2pow22_numerical_NoTitle.pdf  used on input line 324.
 (pdftex.def)             Requested size: 323.76736pt x 222.90877pt.
- [10pdfTeX warning (ext4): destination with the same identifier (name{figure.4}
-) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.326 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-5}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.326 
-       <../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D3_2pow22_a
-nalytic_NoTitle.pdf> <../Results/Report_Results/HarmonicOscillator_SimpleGaussi
-anNumerical_D1_2pow22_numerical_NoTitle.pdf>]
 <../Results/Report_Results/HarmonicOscillator_SimpleGaussianNumerical_D3_2pow22
-_numerical_NoTitle.pdf, id=484, 462.52798pt x 346.89601pt>
+_numerical_NoTitle.pdf, id=456, 462.52798pt x 346.89601pt>
 File: ../Results/Report_Results/HarmonicOscillator_SimpleGaussianNumerical_D3_2
 pow22_numerical_NoTitle.pdf Graphic file (type pdf)
 <use ../Results/Report_Results/HarmonicOscillator_SimpleGaussianNumerical_D3_2p
 ow22_numerical_NoTitle.pdf>
 Package pdftex.def Info: ../Results/Report_Results/HarmonicOscillator_SimpleGau
-ssianNumerical_D3_2pow22_numerical_NoTitle.pdf  used on input line 332.
+ssianNumerical_D3_2pow22_numerical_NoTitle.pdf  used on input line 333.
 (pdftex.def)             Requested size: 323.76736pt x 222.90877pt.
+ [11 <../Results/Report_Results/HarmonicOscillator_SimpleGaussianNumerical_D1_2
+pow22_numerical_NoTitle.pdf> <../Results/Report_Results/HarmonicOscillator_Simp
+leGaussianNumerical_D2_2pow22_numerical_NoTitle.pdf>]
 <../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D1_2pow22_task_C_1
-_NoTitle.pdf, id=489, 462.52798pt x 346.89601pt>
+_NoTitle.pdf, id=535, 462.52798pt x 346.89601pt>
 File: ../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D1_2pow22_tas
 k_C_1_NoTitle.pdf Graphic file (type pdf)
 <use ../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D1_2pow22_task
 _C_1_NoTitle.pdf>
 Package pdftex.def Info: ../Results/Report_Results/HarmonicOscillator_SimpleGau
-ssian_D1_2pow22_task_C_1_NoTitle.pdf  used on input line 345.
+ssian_D1_2pow22_task_C_1_NoTitle.pdf  used on input line 346.
 (pdftex.def)             Requested size: 323.76736pt x 222.90877pt.
- [11pdfTeX warning (ext4): destination with the same identifier (name{figure.6}
-) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.348 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-7}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.348 
-       <../Results/Report_Results/HarmonicOscillator_SimpleGaussianNumerical_D2
-_2pow22_numerical_NoTitle.pdf> <../Results/Report_Results/HarmonicOscillator_Si
-mpleGaussianNumerical_D3_2pow22_numerical_NoTitle.pdf>]
 <../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D2_2pow22_task_C_1
-_NoTitle.pdf, id=565, 462.52798pt x 346.89601pt>
+_NoTitle.pdf, id=537, 462.52798pt x 346.89601pt>
 File: ../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D2_2pow22_tas
 k_C_1_NoTitle.pdf Graphic file (type pdf)
 <use ../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D2_2pow22_task
 _C_1_NoTitle.pdf>
 Package pdftex.def Info: ../Results/Report_Results/HarmonicOscillator_SimpleGau
-ssian_D2_2pow22_task_C_1_NoTitle.pdf  used on input line 352.
+ssian_D2_2pow22_task_C_1_NoTitle.pdf  used on input line 353.
 (pdftex.def)             Requested size: 323.76736pt x 222.90877pt.
+ [12 <../Results/Report_Results/HarmonicOscillator_SimpleGaussianNumerical_D3_2
+pow22_numerical_NoTitle.pdf> <../Results/Report_Results/HarmonicOscillator_Simp
+leGaussian_D1_2pow22_task_C_1_NoTitle.pdf>]
 <../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D3_2pow22_task_C_1
-_NoTitle.pdf, id=567, 462.52798pt x 346.89601pt>
+_NoTitle.pdf, id=614, 462.52798pt x 346.89601pt>
 File: ../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D3_2pow22_tas
 k_C_1_NoTitle.pdf Graphic file (type pdf)
 <use ../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D3_2pow22_task
 _C_1_NoTitle.pdf>
 Package pdftex.def Info: ../Results/Report_Results/HarmonicOscillator_SimpleGau
-ssian_D3_2pow22_task_C_1_NoTitle.pdf  used on input line 359.
+ssian_D3_2pow22_task_C_1_NoTitle.pdf  used on input line 360.
 (pdftex.def)             Requested size: 323.76736pt x 222.90877pt.
- [12pdfTeX warning (ext4): destination with the same identifier (name{figure.8}
-) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.362 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-9}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.362 
-       <../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D1_2pow22_t
-ask_C_1_NoTitle.pdf> <../Results/Report_Results/HarmonicOscillator_SimpleGaussi
-an_D2_2pow22_task_C_1_NoTitle.pdf>]
 <../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D1_2pow18_task_C_2
-_NoTitle.pdf, id=646, 462.52798pt x 346.89601pt>
+_NoTitle.pdf, id=618, 462.52798pt x 346.89601pt>
 File: ../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D1_2pow18_tas
 k_C_2_NoTitle.pdf Graphic file (type pdf)
 <use ../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D1_2pow18_task
 _C_2_NoTitle.pdf>
 Package pdftex.def Info: ../Results/Report_Results/HarmonicOscillator_SimpleGau
-ssian_D1_2pow18_task_C_2_NoTitle.pdf  used on input line 368.
+ssian_D1_2pow18_task_C_2_NoTitle.pdf  used on input line 369.
 (pdftex.def)             Requested size: 323.76736pt x 222.90877pt.
+
+[13 <../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D2_2pow22_task
+_C_1_NoTitle.pdf> <../Results/Report_Results/HarmonicOscillator_SimpleGaussian_
+D3_2pow22_task_C_1_NoTitle.pdf>]
 <../Results/Report_Results/EllipticOscillator_CorrelatedGaussian_2pow18_NoTitle
-.pdf, id=649, 462.52798pt x 346.89601pt>
+.pdf, id=695, 462.52798pt x 346.89601pt>
 File: ../Results/Report_Results/EllipticOscillator_CorrelatedGaussian_2pow18_No
 Title.pdf Graphic file (type pdf)
 <use ../Results/Report_Results/EllipticOscillator_CorrelatedGaussian_2pow18_NoT
 itle.pdf>
 Package pdftex.def Info: ../Results/Report_Results/EllipticOscillator_Correlate
-dGaussian_2pow18_NoTitle.pdf  used on input line 378.
+dGaussian_2pow18_NoTitle.pdf  used on input line 379.
 (pdftex.def)             Requested size: 323.76736pt x 222.90877pt.
- [13pdfTeX warning (ext4): destination with the same identifier (name{figure.10
-}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.380 \end{figure}
-                  pdfTeX warning (ext4): destination with the same identifier (
-name{figure.11}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.380 \end{figure}
-                   <../Results/Report_Results/HarmonicOscillator_SimpleGaussian
-_D3_2pow22_task_C_1_NoTitle.pdf> <../Results/Report_Results/HarmonicOscillator_
-SimpleGaussian_D1_2pow18_task_C_2_NoTitle.pdf>]
+ [14 <../Results/Report_Results/HarmonicOscillator_SimpleGaussian_D1_2pow18_tas
+k_C_2_NoTitle.pdf> <../Results/Report_Results/EllipticOscillator_CorrelatedGaus
+sian_2pow18_NoTitle.pdf>]
 
 pdfTeX warning: pdflatex (file ../Results/Report_Results/geogebra-export.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<../Results/Report_Results/geogebra-export.pdf, id=725, 1441.385pt x 910.40125p
+<../Results/Report_Results/geogebra-export.pdf, id=774, 1441.385pt x 910.40125p
 t>
 File: ../Results/Report_Results/geogebra-export.pdf Graphic file (type pdf)
 <use ../Results/Report_Results/geogebra-export.pdf>
 Package pdftex.def Info: ../Results/Report_Results/geogebra-export.pdf  used on
- input line 402.
+ input line 403.
 (pdftex.def)             Requested size: 360.34537pt x 227.59975pt.
-[14pdfTeX warning (ext4): destination with the same identifier (name{figure.12}
-) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.405 t
-       he relationship turns out to be a 2'nd degree polynomial.pdfTeX warning 
-(ext4): destination with the same identifier (name{table.1}) has been already u
-sed, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.405 t
-       he relationship turns out to be a 2'nd degree polynomial. <../Results/Re
-port_Results/EllipticOscillator_CorrelatedGaussian_2pow18_NoTitle.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
+<../Results/Report_Results/NoJastrow_20.png, id=777, 462.528pt x 346.896pt>
+File: ../Results/Report_Results/NoJastrow_20.png Graphic file (type png)
+<use ../Results/Report_Results/NoJastrow_20.png>
+Package pdftex.def Info: ../Results/Report_Results/NoJastrow_20.png  used on in
+put line 416.
+(pdftex.def)             Requested size: 150.51938pt x 156.10175pt.
+<../Results/Report_Results/Jastrow_20.png, id=780, 462.528pt x 346.896pt>
+File: ../Results/Report_Results/Jastrow_20.png Graphic file (type png)
+<use ../Results/Report_Results/Jastrow_20.png>
+Package pdftex.def Info: ../Results/Report_Results/Jastrow_20.png  used on inpu
+t line 421.
+(pdftex.def)             Requested size: 150.51938pt x 156.10175pt.
+<../Results/Report_Results/LargeJastrow_20.png, id=782, 462.528pt x 346.896pt>
+File: ../Results/Report_Results/LargeJastrow_20.png Graphic file (type png)
+<use ../Results/Report_Results/LargeJastrow_20.png>
+Package pdftex.def Info: ../Results/Report_Results/LargeJastrow_20.png  used on
+ input line 426.
+(pdftex.def)             Requested size: 150.51938pt x 156.10175pt.
+<../Results/Report_Results/LargeJastrow_minus_Jastrow_20.png, id=784, 462.528pt
+ x 346.896pt>
+File: ../Results/Report_Results/LargeJastrow_minus_Jastrow_20.png Graphic file 
+(type png)
+<use ../Results/Report_Results/LargeJastrow_minus_Jastrow_20.png>
+Package pdftex.def Info: ../Results/Report_Results/LargeJastrow_minus_Jastrow_2
+0.png  used on input line 431.
+(pdftex.def)             Requested size: 150.51938pt x 156.10175pt.
+[15 <../Results/Report_Results/geogebra-export.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 445--446
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
+Underfull \hbox (badness 10000) in paragraph at lines 445--446
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--409
+Underfull \hbox (badness 10000) in paragraph at lines 445--446
 
  []
 
-[15pdfTeX warning (ext4): destination with the same identifier (name{figure.13}
-) has been already used, duplicate ignored
+[16 <../Results/Report_Results/NoJastrow_20.png> <../Results/Report_Results/Jas
+trow_20.png> <../Results/Report_Results/LargeJastrow_20.png> <../Results/Report
+_Results/LargeJastrow_minus_Jastrow_20.png>] [17] (main.bbl [18]) [19]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 533.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 533.
 
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.410 \section
-              {Appendix A}\label{app_A} <../Results/Report_Results/geogebra-exp
-ort.pdf>] [16] (main.bbl) [17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 496.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 496.
- (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 496.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 496.
+(main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 533.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 533.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D1B4FB19954288B1BC641871136B9816;1958.
+(rerunfilecheck)             Checksum: 2466816502C2348073661DD33D62C4B9;2057.
  ) 
 Here is how much of TeX's memory you used:
- 19869 strings out of 481199
- 389551 string characters out of 2905595
- 642081 words of memory out of 3000000
- 34947 multiletter control sequences out of 15000+200000
- 546221 words of font info for 69 fonts, out of 3000000 for 9000
+ 21186 strings out of 481199
+ 415478 string characters out of 2905595
+ 659844 words of memory out of 3000000
+ 36239 multiletter control sequences out of 15000+200000
+ 550677 words of font info for 86 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,11n,61p,2038b,340s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,11n,61p,2038b,537s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -1100,9 +1068,9 @@ public/amsfonts/cm/cmsy10.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/adria/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/adria/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (18 pages, 469019 bytes).
+Output written on main.pdf (20 pages, 605456 bytes).
 PDF statistics:
- 863 PDF objects out of 1000 (max. 8388607)
- 102 named destinations out of 1000 (max. 500000)
- 380 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 911 PDF objects out of 1000 (max. 8388607)
+ 106 named destinations out of 1000 (max. 500000)
+ 432 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -160,29 +160,42 @@ def task_c_plot_timeStep(numberOfDimensions, numberOfParticles_list, alpha, time
     
     return 0
 
-#plot_PnrNormalizedEnergy_v_alpha_for_DifferentNrParticles(3, [1], np.linspace(1,20,3))
+def Plot_2D_particlePositions():
+    NrParticles = 20
+    NrSteps = 2**21
+    alpha = 0.5
+    NrSamplingLengths = 5
+    SamplingRadius = 2
+    data.clearOutputDirectory()
+
+    hardCoreDiameter = 0
+    FileOptString = "HC_diameter_zero"
+    data.execute([NrParticles, NrSteps, alpha, hardCoreDiameter, NrSamplingLengths, SamplingRadius, FileOptString])
+    
+    hardCoreDiameter = 0.00433
+    FileOptString = "HC_diameter_regular"
+    data.execute([NrParticles, NrSteps, alpha, hardCoreDiameter, NrSamplingLengths, SamplingRadius, FileOptString])
+
+    #hardCoreDiameter = 0.433
+    #FileOptString = "HC_diameter_bigger"
+    #data.execute([NrParticles, NrSteps, alpha, hardCoreDiameter, NrSamplingLengths, SamplingRadius, FileOptString])
+    
+    NoJastrow_matrix = data.getMatrixFromFile(".\\Output\\CorrelatedGaussian_EllipticOscillator_HC_diameter_zero_Matrix.csv")
+    Jastrow_matrix = data.getMatrixFromFile(".\\Output\\CorrelatedGaussian_EllipticOscillator_HC_diameter_regular_Matrix.csv")
+    #BigJastrow_matrix = data.getMatrixFromFile(".\\Output\\CorrelatedGaussian_EllipticOscillator_HC_diameter_bigger_Matrix.csv")
+    
+    data.createMatrixPlot(NoJastrow_matrix)
+    data.createMatrixPlot(Jastrow_matrix)
+    #data.createMatrixPlot(BigJastrow_matrix)
+    data.createMatrixPlot(Jastrow_matrix-NoJastrow_matrix)
+
+
+#plot_PnrNormalizedEnergy_v_alpha_for_DifferentNrParticles(3, [5], np.linspace(0.5,0.7,1))
 #plot_PnrNormalizedEnergy_v_alpha_for_DifferentNrParticles(2, [1,10,100,500], np.linspace(0.3,0.8,9))
 #plot_PnrNormalizedEnergy_v_alpha_for_DifferentNrParticles(3, [1,10,100,500], np.linspace(0.3,0.8,9))
-task_c_plot_timeStep(1, [1,2], 0.5, [0.1,0.1])
+#task_c_plot_timeStep(3, [2], 0.5, [0.1,0.1])
 #task_c_plot(3, [1,10,100,500], np.linspace(0.3,0.8,10), 0.01)
 
-"""
-if (plotTimeStep):
-    numberOfDimensions  = 3
-    numberOfParticles   = 10
-    numberOfSteps       = 1e6
-    omega				= 1
-    alpha				= 0.5
-    stepLength			= np.linspace(0.1,10,10)
-    equilibration		= 0.1
-    driftCoeff			= 0.5
-    FileOptString		= "Test" #Leave empty string if no output file is desired
-
-    data.execute_cpp_script([numberOfDimensions,numberOfParticles,numberOfSteps,omega,alpha,stepLength,equilibration,driftCoeff,FileOptString],5)
-
-    data.Read_file_and_plot(stepLength,[6],data.Get_newest_file_path(),"Step Length", "Energy")
-
-"""
-
+Plot_2D_particlePositions()
 
 
