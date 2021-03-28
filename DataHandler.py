@@ -161,8 +161,8 @@ def task_c_plot_timeStep(numberOfDimensions, numberOfParticles_list, alpha, time
     return 0
 
 def Plot_2D_particlePositions():
-    NrParticles = 20
-    NrSteps = 2**21
+    NrParticles = 150
+    NrSteps = 2**20
     alpha = 0.5
     NrSamplingLengths = 5
     SamplingRadius = 2
@@ -196,6 +196,6 @@ def Plot_2D_particlePositions():
 #task_c_plot_timeStep(3, [2], 0.5, [0.1,0.1])
 #task_c_plot(3, [1,10,100,500], np.linspace(0.3,0.8,10), 0.01)
 
-Plot_2D_particlePositions()
+#Plot_2D_particlePositions()
 
 
